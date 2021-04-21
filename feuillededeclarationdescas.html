@@ -3,55 +3,61 @@
 
 <head>
   <meta charset="utf-8">
-  <link href="style.css" rel="stylesheet" type="text/css">
+  <!-- <link href="style.css" rel="stylesheet" type="text/css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+  <script src="https://kit.fontawesome.com/87544e3da3.js" crossorigin="anonymous"></script>
   <link rel="icon" href="trichine.ico" />
   <title>Feuille de déclaration des Cas</title>
 </head>
 
 <body>
-  <div id="siteWrapper">
-    <div class="row">
-      <div id="siteMenu" class="columns large-3">
-        <ul class="vertical-menu">
-          <li><a  href="index.html">Accueil</a></li>
-          <li><a  href="trichinellose.html">La trichinellose</a></li>
-          <li><a  href="cycleduparasite.html">Cycle du Parasite</a></li>
-          <li><a  href="especesdetrichine.html">Espèces de trichine</a></li>
-          <li><a  href="testspossiblesalhopitalcochin.html">Tests possibles à l'Hôpital Cochin</a></li>
-          <li><a  href="conduiteatenir.html">Conduite à tenir</a></li>
-          <li><a  href="algorithmediagnostic.html">Algorithme diagnostic</a></li>
-          <li><a class="current" href="feuillededeclarationdescas.html">Feuille de déclaration des Cas</a></li>
-          <li><a href="traitements.html">Les traitements</a></li>
-          <li><a href="listedesepidemiesfrancaises.html">Liste des épidémies françaises</a></li>
-          <li><a href="publicationsdulaboratoire.html">Publications du laboratoire</a></li>
-          <li><a href="liensutiles.html">Liens Utiles</a></li>
+  <nav class="navbar" role="navigation" aria-label="main navigation" style="background-color:lightgray;">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://fr.wikipedia.org/wiki/Trichinella_spiralis#:~:text=La%20Trichine%20(Trichinella%20spiralis)%20est,masses%20musculaires%2C%20constitue%20la%20trichinellose.">
+        <img src="trichine.png" width="30" height="30">
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a href="index.html" class="navbar-item">
+          <i class="fas fa-home"></i>&nbsp;Accueil
+        </a>
 
-        </ul>
-      </div>
-      <div class="columns large-9">
-        <div class="row">
-          <div class="columns large-12" data-bloc-type="media">
-            <div class="panel">
-              <p><img src="30cebcf40d62b34f587222e5dea234b1.jpg" data-id="QKCAeP20Zsc=" data-media-type="img" data-width="1339" alt="declaration cas"></p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="columns large-12" data-bloc-type="text">
-            <div class="panel">
-              <p>fiche &agrave; t&eacute;l&eacute;charger</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="columns large-12 target" data-bloc-type="media">
-            <div class="panel">
-              <p><a data-id="THBRH1TMf14=" data-media-type="file" href="5d757959fa26c13d4a392dfffb92cc34.pdf" target="_blank">fiche cas.pdf</a></p>
-            </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Plus
+          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="trichinellose.html"><img src="trichine.png" width="20" height="20">&nbsp;La trichinellose</a>
+            <a class="navbar-item" href="cycleduparasite.html"><i class="fas fa-undo"></i>&nbsp;Cycle du Parasite</a>
+            <a class="navbar-item" href="especesdetrichine.html"><i class="fas fa-globe-europe"></i>&nbsp;Espèces de trichine</a>
+            <a class="navbar-item" href="testspossiblesalhopitalcochin.html"><i class="fas fa-hospital-alt"></i>&nbsp;Tests possibles à l'Hôpital Cochin</a>
+            <a class="navbar-item" href="conduiteatenir.html"><i class="fas fa-gavel"></i>&nbsp;Conduite à tenir</a>
+            <a class="navbar-item" href="algorithmediagnostic.html"><i class="fas fa-robot"></i>&nbsp;Algorithme diagnostic</a>
+            <a class="navbar-item" href="feuillededeclarationdescas.html"><i class="far fa-sticky-note"></i>&nbsp;Feuille de déclaration des Cas</a>
+            <a class="navbar-item" href="traitements.html"><i class="fas fa-capsules"></i>&nbsp;Les traitements</a>
+            <a class="navbar-item" href="listedesepidemiesfrancaises.html"><i class="fas fa-list"></i>&nbsp;Liste des épidémies françaises</a>
+            <a class="navbar-item" href="publicationsdulaboratoire.html"><i class="fas fa-microscope"></i>&nbsp;Publications du laboratoire</a>
+            <hr class="navbar-divider">
+            <a class="navbar-item" href="liensutiles.html"><i class="fas fa-link"></i>&nbsp;Liens Utiles</a>
           </div>
         </div>
       </div>
     </div>
+  </nav>
+  <br /><br />
+  <div style="margin-left:20%;margin-right:20%;">
+    <p><img src="30cebcf40d62b34f587222e5dea234b1.jpg" data-id="QKCAeP20Zsc=" data-media-type="img" data-width="1339" alt="declaration cas"></p>
+
+    <p>fiche &agrave; t&eacute;l&eacute;charger</p>
+
+    <p><a data-id="THBRH1TMf14=" data-media-type="file" href="5d757959fa26c13d4a392dfffb92cc34.pdf" target="_blank">fiche cas.pdf</a></p>
+
   </div>
 </body>
 
