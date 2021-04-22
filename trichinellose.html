@@ -3,55 +3,60 @@
 
 <head>
   <meta charset="utf-8">
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
-<script src="https://kit.fontawesome.com/87544e3da3.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+  <script src="https://kit.fontawesome.com/87544e3da3.js" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
   <link rel="icon" href="trichine.ico" />
   <title>La trichinellose</title>
 </head>
 
 <body>
-  <nav class="navbar" role="navigation" aria-label="main navigation" style="background-color:lightgray;">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="https://fr.wikipedia.org/wiki/Trichinella_spiralis#:~:text=La%20Trichine%20(Trichinella%20spiralis)%20est,masses%20musculaires%2C%20constitue%20la%20trichinellose.">
-        <img src="trichine.png" width="30" height="30">
-      </a>
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-start">
-        <a href="index.html" class="navbar-item">
-          <i class="fas fa-home"></i>&nbsp;Accueil
+  <nav class="navbar is-primary" role="navigation" aria-label="main navigation" style="background-color:lightgray;">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://fr.wikipedia.org/wiki/Trichinella_spiralis#:~:text=La%20Trichine%20(Trichinella%20spiralis)%20est,masses%20musculaires%2C%20constitue%20la%20trichinellose.">
+          <img src="trichine.png" width="30" height="30">
         </a>
-
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">
-            Plus
-          </a>
-          <div class="navbar-dropdown">
-            <a class="navbar-item" href="trichinellose.html"><img src="trichine.png" width="20" height="20">&nbsp;La trichinellose</a>
-            <a class="navbar-item" href="cycleduparasite.html"><i class="fas fa-undo"></i>&nbsp;Cycle du Parasite</a>
-            <a class="navbar-item" href="especesdetrichine.html"><i class="fas fa-globe-europe"></i>&nbsp;Espèces de trichine</a>
-            <a class="navbar-item" href="testspossiblesalhopitalcochin.html"><i class="fas fa-hospital-alt"></i>&nbsp;Tests possibles à l'Hôpital Cochin</a>
-            <a class="navbar-item" href="conduiteatenir.html"><i class="fas fa-gavel"></i>&nbsp;Conduite à tenir</a>
-            <a class="navbar-item" href="algorithmediagnostic.html"><i class="fas fa-robot"></i>&nbsp;Algorithme diagnostic</a>
-            <a class="navbar-item" href="feuillededeclarationdescas.html"><i class="far fa-sticky-note"></i>&nbsp;Feuille de déclaration des Cas</a>
-            <a class="navbar-item" href="traitements.html"><i class="fas fa-capsules"></i>&nbsp;Les traitements</a>
-            <a class="navbar-item" href="listedesepidemiesfrancaises.html"><i class="fas fa-list"></i>&nbsp;Liste des épidémies françaises</a>
-            <a class="navbar-item" href="publicationsdulaboratoire.html"><i class="fas fa-microscope"></i>&nbsp;Publications du laboratoire</a>
-            <hr class="navbar-divider">
-            <a class="navbar-item" href="liensutiles.html"><i class="fas fa-link"></i>&nbsp;Liens Utiles</a>
+        <a href="index.html" style="color:black;" class="navbar-item">
+          <i style="color:black;" class="fas fa-home"></i>&nbsp;Accueil
+        </a>
+        <a role="button" class="navbar-burger burger" aria-label="menu" data-target="navMenu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navMenu" class="navbar-menu">
+        <div class="navbar-start">
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a style="color:black;" class="navbar-link">
+              Plus
+            </a>
+            <div class="navbar-dropdown" style="color:black;">
+              <a class="navbar-item" href="trichinellose.html"><img src="trichine.png" width="20" height="20">&nbsp;La trichinellose</a>
+              <a class="navbar-item" href="cycleduparasite.html"><i class="fas fa-undo"></i>&nbsp;Cycle du Parasite</a>
+              <a class="navbar-item" href="especesdetrichine.html"><i class="fas fa-globe-europe"></i>&nbsp;Espèces de trichine</a>
+              <a class="navbar-item" href="testspossiblesalhopitalcochin.html"><i class="fas fa-hospital-alt"></i>&nbsp;Tests possibles à l'Hôpital Cochin</a>
+              <a class="navbar-item" href="conduiteatenir.html"><i class="fas fa-gavel"></i>&nbsp;Conduite à tenir</a>
+              <a class="navbar-item" href="algorithmediagnostic.html"><i class="fas fa-robot"></i>&nbsp;Algorithme diagnostic</a>
+              <a class="navbar-item" href="feuillededeclarationdescas.html"><i class="far fa-sticky-note"></i>&nbsp;Feuille de déclaration des Cas</a>
+              <a class="navbar-item" href="traitements.html"><i class="fas fa-capsules"></i>&nbsp;Les traitements</a>
+              <a class="navbar-item" href="listedesepidemiesfrancaises.html"><i class="fas fa-list"></i>&nbsp;Liste des épidémies françaises</a>
+              <a class="navbar-item" href="publicationsdulaboratoire.html"><i class="fas fa-microscope"></i>&nbsp;Publications du laboratoire</a>
+              <hr class="navbar-divider">
+              <a class="navbar-item" href="liensutiles.html"><i class="fas fa-link"></i>&nbsp;Liens Utiles</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </nav>
   <br /><br />
-<div style="margin-left:20%;margin-right:20%;">
+  <div class="columns is-mobile">
+    <div class="column"></div>
+    <div class="column is-three-quarters">
       <p>Les trichinelloses sont des <strong>zoonoses parasitaire provoqu&eacute;es par diverses esp&egrave;ces de n&eacute;matodes vivipares du genre </strong><em><strong>Trichinella</strong></em>.&nbsp;</p>
       <p>Leur cycle &eacute;volutif fait intervenir un seul h&ocirc;te, successivement h&ocirc;te d&eacute;finitif, qui h&eacute;berge les parasites adultes dans sa muqueuse intestinale, puis h&ocirc;te interm&eacute;diaire avec apparition de
         larves infectantes encapsul&eacute;es dans les fibres musculaires stri&eacute;es squelettiques.&nbsp;</p>
@@ -73,16 +78,18 @@
       <p><strong><br></strong></p>
       <p><em>voir ci dessous, article de 2010 dans la Revue du Praticien&nbsp; et article de 2017 dans la Lettre de l'Infectiologue</em></p>
 
-      <p><a data-id="mo5x1ysAFqg=" data-media-type="file" href="8a0a4c6b3306b6d32d5408d2c95b4dec.pdf" >Dupouy-Camet et al. RDPraticien 2010_2_159-1.pdf</a></p>
+      <p><a data-id="mo5x1ysAFqg=" data-media-type="file" href="8a0a4c6b3306b6d32d5408d2c95b4dec.pdf">Dupouy-Camet et al. RDPraticien 2010_2_159-1.pdf</a></p>
       <br />
-      <p><a data-id="H/zaPKJiwyM=" data-media-type="file" href="87d9ef717cbc446fed6e64111f2955bc.pdf" >Paugam et al 2017 Lettre de l'infectiologue.pdf</a></p>
+      <p><a data-id="H/zaPKJiwyM=" data-media-type="file" href="87d9ef717cbc446fed6e64111f2955bc.pdf">Paugam et al 2017 Lettre de l'infectiologue.pdf</a></p>
       <br />
       <p><img src="e4b7b6f6ab43bc63cc145386c6b97cb3.gif" data-id="GD/3WuIXKQM=" data-media-type="img" data-width="200" alt="6-picture2"></p>
       <br />
       <p><img src="3198f3617fe8f87aedf4a884c577fdef.gif" data-id="ph/LH7b+4uI=" data-media-type="img" data-width="200" alt="6-picture3"></p>
       <br />
       <p><em>Larves musculaires observ&eacute;es sur des biopsies musculaires</em></p>
-</div>
+    </div>
+    <div class="column"></div>
+  </div>
 </body>
 
 </html>

@@ -3,55 +3,60 @@
 
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
   <script src="https://kit.fontawesome.com/87544e3da3.js" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
   <link rel="icon" href="trichine.ico" />
   <title>Tests possibles à l'Hôpital Cochin</title>
 </head>
 
 <body>
-  <nav class="navbar" role="navigation" aria-label="main navigation" style="background-color:lightgray;">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="https://fr.wikipedia.org/wiki/Trichinella_spiralis#:~:text=La%20Trichine%20(Trichinella%20spiralis)%20est,masses%20musculaires%2C%20constitue%20la%20trichinellose.">
-        <img src="trichine.png" width="30" height="30">
-      </a>
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-start">
-        <a href="index.html" class="navbar-item">
-          <i class="fas fa-home"></i>&nbsp;Accueil
+  <nav class="navbar is-primary" role="navigation" aria-label="main navigation" style="background-color:lightgray;">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://fr.wikipedia.org/wiki/Trichinella_spiralis#:~:text=La%20Trichine%20(Trichinella%20spiralis)%20est,masses%20musculaires%2C%20constitue%20la%20trichinellose.">
+          <img src="trichine.png" width="30" height="30">
         </a>
-
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">
-            Plus
-          </a>
-          <div class="navbar-dropdown">
-            <a class="navbar-item" href="trichinellose.html"><img src="trichine.png" width="20" height="20">&nbsp;La trichinellose</a>
-            <a class="navbar-item" href="cycleduparasite.html"><i class="fas fa-undo"></i>&nbsp;Cycle du Parasite</a>
-            <a class="navbar-item" href="especesdetrichine.html"><i class="fas fa-globe-europe"></i>&nbsp;Espèces de trichine</a>
-            <a class="navbar-item" href="testspossiblesalhopitalcochin.html"><i class="fas fa-hospital-alt"></i>&nbsp;Tests possibles à l'Hôpital Cochin</a>
-            <a class="navbar-item" href="conduiteatenir.html"><i class="fas fa-gavel"></i>&nbsp;Conduite à tenir</a>
-            <a class="navbar-item" href="algorithmediagnostic.html"><i class="fas fa-robot"></i>&nbsp;Algorithme diagnostic</a>
-            <a class="navbar-item" href="feuillededeclarationdescas.html"><i class="far fa-sticky-note"></i>&nbsp;Feuille de déclaration des Cas</a>
-            <a class="navbar-item" href="traitements.html"><i class="fas fa-capsules"></i>&nbsp;Les traitements</a>
-            <a class="navbar-item" href="listedesepidemiesfrancaises.html"><i class="fas fa-list"></i>&nbsp;Liste des épidémies françaises</a>
-            <a class="navbar-item" href="publicationsdulaboratoire.html"><i class="fas fa-microscope"></i>&nbsp;Publications du laboratoire</a>
-            <hr class="navbar-divider">
-            <a class="navbar-item" href="liensutiles.html"><i class="fas fa-link"></i>&nbsp;Liens Utiles</a>
+        <a href="index.html" style="color:black;" class="navbar-item">
+          <i style="color:black;" class="fas fa-home"></i>&nbsp;Accueil
+        </a>
+        <a role="button" class="navbar-burger burger" aria-label="menu" data-target="navMenu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navMenu" class="navbar-menu">
+        <div class="navbar-start">
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a style="color:black;" class="navbar-link">
+              Plus
+            </a>
+            <div class="navbar-dropdown" style="color:black;">
+              <a class="navbar-item" href="trichinellose.html"><img src="trichine.png" width="20" height="20">&nbsp;La trichinellose</a>
+              <a class="navbar-item" href="cycleduparasite.html"><i class="fas fa-undo"></i>&nbsp;Cycle du Parasite</a>
+              <a class="navbar-item" href="especesdetrichine.html"><i class="fas fa-globe-europe"></i>&nbsp;Espèces de trichine</a>
+              <a class="navbar-item" href="testspossiblesalhopitalcochin.html"><i class="fas fa-hospital-alt"></i>&nbsp;Tests possibles à l'Hôpital Cochin</a>
+              <a class="navbar-item" href="conduiteatenir.html"><i class="fas fa-gavel"></i>&nbsp;Conduite à tenir</a>
+              <a class="navbar-item" href="algorithmediagnostic.html"><i class="fas fa-robot"></i>&nbsp;Algorithme diagnostic</a>
+              <a class="navbar-item" href="feuillededeclarationdescas.html"><i class="far fa-sticky-note"></i>&nbsp;Feuille de déclaration des Cas</a>
+              <a class="navbar-item" href="traitements.html"><i class="fas fa-capsules"></i>&nbsp;Les traitements</a>
+              <a class="navbar-item" href="listedesepidemiesfrancaises.html"><i class="fas fa-list"></i>&nbsp;Liste des épidémies françaises</a>
+              <a class="navbar-item" href="publicationsdulaboratoire.html"><i class="fas fa-microscope"></i>&nbsp;Publications du laboratoire</a>
+              <hr class="navbar-divider">
+              <a class="navbar-item" href="liensutiles.html"><i class="fas fa-link"></i>&nbsp;Liens Utiles</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </nav>
   <br /><br />
-  <div style="margin-left:20%;margin-right:20%;">
+  <div class="columns is-mobile">
+    <div class="column"></div>
+    <div class="column is-three-quarters">
     <p>Nous pouvons aider au diagnostic biologique par :</p>
     <p>La r&eacute;alisation de&nbsp;<strong>tests s&eacute;rologiques</strong> (ELISA, immunoempreintes...)</p>
     <p>L'examen de <strong>biopsies musculaires</strong></p>
@@ -60,6 +65,8 @@
     <p><img src="82f626ab20385785722b4411a3adba06.jpg" data-id="k6qekJiANEU=" data-media-type="img" data-width="200" alt="6-picture4"></p>
 
     <p><img src="2e288a5f72087d414cd4d0eed1e496b2.gif" data-id="6z+kucIBls8=" data-media-type="img" data-width="200" alt="6-picture6"></p>
+  </div>
+  <div class="column"></div>
   </div>
 </body>
 
